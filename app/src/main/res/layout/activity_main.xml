@@ -26,11 +26,11 @@
             android:max="255"
             android:layout_height="wrap_content"
             android:id="@+id/main_seekBar_intensity_red" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             app:layout_constraintBottom_toBottomOf="@+id/main_edittext_intensity_red"
             app:layout_constraintTop_toTopOf="@+id/main_edittext_intensity_red"
-            app:layout_constraintVertical_bias="1.0"/>
+            app:layout_constraintVertical_bias="1.0" android:thumbTint="#7F0909" android:progressTint="#7F0909"
+            android:foregroundTint="#7F0909"/>
     <Switch
             android:text="HEX"
             android:layout_width="wrap_content"
@@ -57,11 +57,12 @@
             android:layout_height="wrap_content"
             android:id="@+id/main_seekBar_intensity_green"
             app:layout_constraintEnd_toStartOf="@+id/main_edittext_intensity_green" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
             app:layout_constraintTop_toTopOf="@+id/main_edittext_intensity_green"
             app:layout_constraintBottom_toBottomOf="@+id/main_edittext_intensity_green"
-            app:layout_constraintHorizontal_bias="0.32" app:layout_constraintVertical_bias="1.0"/>
+            app:layout_constraintHorizontal_bias="0.32" app:layout_constraintVertical_bias="1.0"
+            android:foregroundTint="#097f09" android:progressTint="#097f09" android:thumbTint="#097f09"/>
     <EditText
             android:layout_width="40dp"
             android:layout_height="wrap_content"
@@ -80,12 +81,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/main_seekBar_intensity_blue"
             app:layout_constraintEnd_toStartOf="@+id/main_edittext_intensity_blue"
-            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp"
             app:layout_constraintTop_toTopOf="@+id/main_edittext_intensity_blue"
             app:layout_constraintBottom_toBottomOf="@+id/main_edittext_intensity_blue"
-            app:layout_constraintHorizontal_bias="0.333" app:layout_constraintVertical_bias="1.0"/>
+            app:layout_constraintHorizontal_bias="0.333" app:layout_constraintVertical_bias="1.0"
+            android:foregroundTint="#09097f" android:progressTint="#09097f" android:thumbTint="#09097f"/>
     <EditText
             android:layout_width="40dp"
             android:layout_height="wrap_content"
@@ -103,12 +105,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/main_seekBar_intensity_alpha"
             app:layout_constraintEnd_toStartOf="@+id/main_edittext_intensity_alpha"
-            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp"
             app:layout_constraintTop_toTopOf="@+id/main_edittext_intensity_alpha"
             app:layout_constraintBottom_toBottomOf="@+id/main_edittext_intensity_alpha"
-            app:layout_constraintHorizontal_bias="0.32" app:layout_constraintVertical_bias="1.0"/>
+            app:layout_constraintHorizontal_bias="0.32" app:layout_constraintVertical_bias="1.0"
+            android:thumbTint="#000000" android:foregroundTint="#000000" android:progressTint="#000000"/>
     <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp" app:srcCompat="@drawable/ic_unifor"

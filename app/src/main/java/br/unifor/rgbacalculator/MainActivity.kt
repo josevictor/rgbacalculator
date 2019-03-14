@@ -1,6 +1,7 @@
 package br.unifor.rgbacalculator
 
 import android.graphics.Color
+import android.graphics.PorterDuff
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.text.InputType
@@ -21,12 +22,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        main_imageview_logo_unifor.imageAlpha = 0
+        main_imageview_logo_unifor.imageAlpha = 255
+
         this.actionEditTextNotHex(main_edittext_intensity_red, main_seekBar_intensity_red)
         this.actionEditTextNotHex(main_edittext_intensity_green, main_seekBar_intensity_green)
         this.actionEditTextNotHex(main_edittext_intensity_blue, main_seekBar_intensity_blue)
         this.actionEditTextNotHex(main_edittext_intensity_alpha, main_seekBar_intensity_alpha)
-
 
         main_switch_activate_hex.setOnCheckedChangeListener{ buttonView, isChecked ->
             if (isChecked) {
